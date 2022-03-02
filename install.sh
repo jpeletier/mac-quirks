@@ -54,6 +54,7 @@ apt install firmware-b43-installer
 # Taken from https://github.com/Dunedan/mbp-2016-linux/issues/47#issuecomment-958597026
 # Longer thread: https://bugzilla.kernel.org/show_bug.cgi?id=193121
 # summary: https://unix.stackexchange.com/questions/573064/wifi-being-very-slow-not-working-for-linux-on-mac-why-wont-it-connect
+# NOTE: must change mac address in /lib/firmware/brcm/brcmfmac43602-pcie.txt to your mac address
 
 # 3.- reload driver, although probably a reboot would be better
 sudo rmmod brcmfmac && sudo modprobe brcmfmac
