@@ -26,10 +26,13 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # Copy several config files for acpi stuff and keys:
-rm -rf /tmp/root
-cp -R root/ /tmp/
-chown -R root:root /tmp/root
-rsync -avh --progress /tmp/root/ /
+
+# COMMENTED OUT BECAUSE IT DESTROYS YOUR INSTALLATION!!
+# JUST COPY IT BY HAND
+#rm -rf /tmp/root
+#cp -R root/ /tmp/
+#chown -R root:root /tmp/root
+#rsync -avh --progress /tmp/root/ /
 
 # install service to disable XHC1 wakeup on startup:
 sudo systemctl daemon-reload
