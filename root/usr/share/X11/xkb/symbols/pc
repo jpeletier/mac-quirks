@@ -4,8 +4,7 @@ xkb_symbols "pc105" {
     key <ESC>  {	[ Escape		]	};
 
     // The extra key on many European keyboards:
-    key <LSGT> {	[ less, greater, bar, brokenbar ] };
-
+    key <TLDE>	{ [ masculine, ordfeminine,    backslash,   backslash ]	};
     // The following keys are common to all layouts.
     key <BKSL> {	[ backslash,	bar	]	};
     key <SPCE> {	[ 	 space		]	};
